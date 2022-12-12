@@ -1,6 +1,7 @@
 plugins {
     id 'com.android.library'
 }
+apply from: '../wawj_maven_upload.gradle'
 
 android {
     compileSdkVersion 30
