@@ -59,6 +59,7 @@ public class NormalMethodList extends HookMethodList {
         LinkedList<ClassMethodGroup> list = new LinkedList<>();
         //PackageManager
         ClassMethodGroup pkgManagerHook = new ClassMethodGroup("android.app.ApplicationPackageManager");
+        pkgManagerHook.addMethod("getPackageInfoAsUser"); //获取应用信息
         pkgManagerHook.addMethod("getInstalledPackagesAsUser");
         list.add(pkgManagerHook);
         //SmsManager    短信
