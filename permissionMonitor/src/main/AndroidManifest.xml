@@ -1,5 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.hua.permissionmonitor">
-
+    <application>
+        <provider
+            android:name=".PermissionMonitorProvider"
+            android:authorities="${applicationId}.PERMISSION_MONITOR_PROVIDER"
+            android:exported="false" />
+    </application>
 </manifest>

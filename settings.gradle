@@ -1,3 +1,3 @@
-rootProject.name = "testHook"
+rootProject.name = "permissionMonitor"
 include ':app'
 include ':permissionMonitor'
