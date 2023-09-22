@@ -9,7 +9,7 @@ import android.net.Uri;
 public class PermissionMonitorProvider extends ContentProvider {
     @Override
     public boolean onCreate() {
-        PermissionMonitor.start(false);
+        PermissionMonitor.start(true);
         return true;
     }
 
